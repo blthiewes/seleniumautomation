@@ -4,4 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="2.30.0" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.17.0" />
+    <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="15.15063.0" />
+  </ItemGroup>
 </Project>

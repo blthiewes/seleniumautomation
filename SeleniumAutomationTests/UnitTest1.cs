@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SeleniumAutomationStandard;
 
 namespace SeleniumAutomationTests
 {
@@ -8,6 +9,9 @@ namespace SeleniumAutomationTests
         [TestMethod]
         public void TestMethod1()
         {
+            var class1 = new Class1();
+            class1.Go();
         }
     }
+
 }
