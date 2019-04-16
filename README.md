@@ -2,7 +2,7 @@
 This project runs selenium automation with dotnet core 2.2 and vscode
 
 ## To Run
-* Git Installed (https://git-scm.com/downloads){https://git-scm.com/downloads}
+* Git Installed (https://git-scm.com/downloads)[https://git-scm.com/downloads]
 * VS Code Installed
   * Test Explorer UI Extension
   * .NET Core Test Explorer
