@@ -1,4 +1,4 @@
-#SeleniumAutomation
+# SeleniumAutomation
 This project runs selenium automation with dotnet core 2.2 and vscode
 
 ## Prerequisites
