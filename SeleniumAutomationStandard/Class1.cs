@@ -11,7 +11,7 @@ namespace SeleniumAutomationStandard
 
             using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             {
-                driver.Navigate().GoToUrl(@"https://automatetheplanet.com/multiple-files-page-objects-item-templates/");
+                driver.Navigate().GoToUrl(@"http://facebook.com");
             }
         }
     }
