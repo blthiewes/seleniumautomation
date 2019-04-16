@@ -4,7 +4,7 @@ using SeleniumAutomationStandard;
 namespace SeleniumAutomationTests
 {
     [TestClass]
-    public class UnitTest1
+    public class LoginTests
     {
         [TestMethod]
         public void TestMethod1()
