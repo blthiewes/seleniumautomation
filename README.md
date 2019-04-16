@@ -9,8 +9,10 @@ This project runs selenium automation with dotnet core 2.2 and vscode
 * [Docker Desktop](https://www.docker.com/products/docker-desktop) Installed
 
 ## To Run
+### Start Test Link
 * `git clone https://github.com/bitnami/bitnami-docker-testlink.git`
 * `docker-compose up` from bitnami-docker-testlink folder
+### Start Selenium Tests
 * open new terminal
 * `git clone https://github.com/blthiewes/seleniumautomation.git`
 * `code ./seleniumautomation`
