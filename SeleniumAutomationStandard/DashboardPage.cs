@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace SeleniumAutomationStandard
 {
-    public class Class1
+    public class DashboardPage
     {
         public void Go()
         {

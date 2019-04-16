@@ -6,11 +6,19 @@ namespace SeleniumAutomationTests
     [TestClass]
     public class LoginTests
     {
-        [TestMethod]
-        public void TestMethod1()
+        [TestInitialize]
+        public void Init()
         {
-            var class1 = new Class1();
-            class1.Go();
+            Driver.Initialize();
+        }
+        
+        [TestMethod]
+        public void Admin_User_Can_Login()
+        {
+            LoginPage.GoTo();
+            LoginPage.LoginAs("user").WithPassword("bitnami").Login();
+
+            //Assert.IsTrue(Class1.IsAt, "Failed to login");
         }
     }
 
