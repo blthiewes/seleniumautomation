@@ -1,10 +1,10 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SeleniumAutomationStandard;
 
 namespace SeleniumAutomationTests
 {
     [TestClass]
-    public class LoginTests
+    public class LoginTest
     {
         [TestInitialize]
         public void Init()
@@ -18,7 +18,12 @@ namespace SeleniumAutomationTests
             LoginPage.GoTo();
             LoginPage.LoginAs("user").WithPassword("bitnami").Login();
 
-            //Assert.IsTrue(Class1.IsAt, "Failed to login");
+            Assert.IsTrue(HomePage.IsAt, "Failed to login");
+        }
+
+        [TestCleanup]
+        public void TestCleanup(){
+            Driver.Close();
         }
     }
 

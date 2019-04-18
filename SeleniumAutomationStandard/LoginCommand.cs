@@ -22,6 +22,7 @@ namespace SeleniumAutomationStandard
 
         public void Login()
         {
+            var pageSource = Driver.Instance.PageSource;
             var loginInput = Driver.Instance.FindElement(By.Id("tl_login"));
             loginInput.SendKeys(username);
             var passwordInput = Driver.Instance.FindElement(By.Id("tl_password"));

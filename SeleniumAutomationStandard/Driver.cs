@@ -15,5 +15,10 @@ namespace SeleniumAutomationStandard
             Instance = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
+
+        public static void Close()
+        {
+            Instance.Close();
+        }
     }
 }
