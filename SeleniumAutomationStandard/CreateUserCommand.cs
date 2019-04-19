@@ -1,5 +1,6 @@
 using System;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAutomationStandard
 {
@@ -37,8 +38,15 @@ namespace SeleniumAutomationStandard
         public void Save()
         {
             var source = Driver.Instance.PageSource;
-            var loginInput = Driver.Instance.FindElement(By.Name("login"));
-            loginInput.SendKeys(username);
+            Driver.Instance.FindElement(By.Name("login")).SendKeys(username);
+            Driver.Instance.FindElement(By.Name("firstName")).SendKeys(firstName);
+            Driver.Instance.FindElement(By.Name("lastName")).SendKeys(lastName);
+            Driver.Instance.FindElement(By.Name("password")).SendKeys(password);
+            Driver.Instance.FindElement(By.Name("emailAddress")).SendKeys(email);
+            var select = new SelectElement(Driver.Instance.FindElement(By.Name("rights_id")));
+            select.SelectByText(role);
+            Driver.Instance.FindElement(By.Name("do_update")).Click();
+            
         }
 
         public CreateUserCommand WithRole(string v)

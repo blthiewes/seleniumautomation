@@ -28,7 +28,9 @@ namespace SeleniumAutomationStandard
 
         public static bool HasUser(string v)
         {
-            return true;
+            var pageSource = Driver.Instance.PageSource;
+            var userLink = Driver.Instance.FindElement(By.LinkText(v));
+            return userLink != null;
         }
     }
 }

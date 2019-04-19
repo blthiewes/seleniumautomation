@@ -20,15 +20,16 @@ namespace SeleniumAutomationTests
 
             UserManagementPage.GoTo();
             CreateUserPage.GoTo();
-            CreateUserPage.CreateUser("username")
+            var username = "username" + System.Guid.NewGuid().ToString();
+            CreateUserPage.CreateUser(username)
                 .WithFirstName("firstName")
                 .WithLastName("LastName")
                 .WithEmail("test@test.com")
                 .WithPassword("password")
-                .WithRole("roleName")
+                .WithRole("guest")
                 .Save();
 
-            Assert.IsTrue(UserManagementPage.HasUser("username"), "User was not found");
+            Assert.IsTrue(UserManagementPage.HasUser(username), "User was not found");
         }
 
         [TestCleanup]
