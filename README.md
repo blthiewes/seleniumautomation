@@ -18,3 +18,10 @@ This project runs selenium automation with dotnet core 2.2 and vscode
 * `git clone https://github.com/blthiewes/seleniumautomation.git`
 * `code ./seleniumautomation`
 * Run All Tests from .NET Test Expolorer on VS Code
+
+## Tools
+* [HTML Formatter](https://www.bing.com/search?q=html+formatter&PC=U316&FORM=CHROMN)
+
+## Sources
+* [iframes](https://www.seleniumeasy.com/selenium-tutorials/how-to-work-with-iframes-in-selenium-webdriver)
+* [select/combobox/dropdown](https://www.guru99.com/select-option-dropdown-selenium-webdriver.html)
