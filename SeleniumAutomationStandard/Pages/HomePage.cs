@@ -18,14 +18,5 @@ namespace SeleniumAutomationStandard.Pages
                 return listGroups.Count == 34;
             } 
         }
-
-        public void Go()
-        {
-
-            using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
-            {
-                driver.Navigate().GoToUrl(@"http://facebook.com");
-            }
-        }
     }
 }
