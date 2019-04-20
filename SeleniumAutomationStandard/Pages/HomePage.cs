@@ -2,6 +2,7 @@
 using System.Reflection;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using SeleniumAutomationStandard.Selenium;
 
 namespace SeleniumAutomationStandard.Pages
 {

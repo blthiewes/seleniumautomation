@@ -1,6 +1,7 @@
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SeleniumAutomationStandard.Selenium;
 
 namespace SeleniumAutomationStandard
 {
