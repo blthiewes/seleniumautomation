@@ -4,20 +4,11 @@ using SeleniumAutomationStandard;
 namespace SeleniumAutomationTests
 {
     [TestClass]
-    public class CanCreateUserTest
+    public class CanCreateUserTest : BaseTest
     {
-        [TestInitialize]
-        public void Init()
-        {
-            Driver.Initialize();
-        }
-        
         [TestMethod]
         public void CanCreateUser()
         {
-            LoginPage.GoTo();
-            LoginPage.LoginAs("user").WithPassword("bitnami").Login();
-
             UserManagementPage.GoTo();
             CreateUserPage.GoTo();
             var username = "username" + System.Guid.NewGuid().ToString();
@@ -30,11 +21,6 @@ namespace SeleniumAutomationTests
                 .Save();
 
             Assert.IsTrue(UserManagementPage.HasUser(username), "User was not found");
-        }
-
-        [TestCleanup]
-        public void TestCleanup(){
-            Driver.Close();
         }
     }
 
