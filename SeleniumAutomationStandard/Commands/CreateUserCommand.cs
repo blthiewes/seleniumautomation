@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumAutomationStandard.Selenium;
 
-namespace SeleniumAutomationStandard
+namespace SeleniumAutomationStandard.Commands
 {
     public class CreateUserCommand
     {

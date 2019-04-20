@@ -2,7 +2,7 @@ using System;
 using OpenQA.Selenium;
 using SeleniumAutomationStandard.Selenium;
 
-namespace SeleniumAutomationStandard
+namespace SeleniumAutomationStandard.Commands
 {
     public class LoginCommand
     {
