@@ -4,7 +4,7 @@ using System.Reflection;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace SeleniumAutomationStandard
+namespace SeleniumAutomationStandard.Pages
 {
     public class LoginPage
     {

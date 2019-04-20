@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SeleniumAutomationStandard;
+using SeleniumAutomationStandard.Pages;
 
 namespace SeleniumAutomationTests
 {
