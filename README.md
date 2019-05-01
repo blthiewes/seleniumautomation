@@ -12,6 +12,7 @@ This project runs selenium automation with dotnet core 2.2 and vscode
 ### Start Test Link
 * `git clone https://github.com/bitnami/bitnami-docker-testlink.git`
 * `docker-compose up` from bitnami-docker-testlink folder
+* Login with username: `user` and password `bitnami`
 * **Initialize Project so you go to Home Page after logging in**
 ### Start Selenium Tests
 * open new terminal
